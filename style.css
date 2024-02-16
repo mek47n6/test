@@ -40,7 +40,7 @@ table {
 /* Мои стили */
 
 .topBar {
-  height: 154px;
+  height: 140px;
   width: auto;
   display: flex;
   /*border: 2px solid black;*/
@@ -48,7 +48,6 @@ table {
 .topBarImg {
   display: flex;
   justify-content: center;
-  height: 150px;
   width: 80%;
 }
 .contact {
@@ -67,7 +66,8 @@ table {
   display: flex;
   float: left;
   width: 400px;
- /* border: 2px solid black;*/
+  /*border: 2px solid black; */
+  justify-content: center;
 }
 .selfInfo {
   padding: 0px 5px; /*отступ вложенного текста от рамки*/
@@ -113,12 +113,9 @@ table {
   display: flex;
   flex-direction: column;
 }
-
-
-
 .lotsArt{
   background-color: #ffffff;
-  border: 1px solid darkgray;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
   padding: 5px;
   margin: 0 auto;
@@ -127,18 +124,28 @@ table {
   display: flex;
   justify-content: space-around;
 }
-
 .sizeArt{
-  border: 1px solid darkgray;
+  border: 1px solid rgb(0, 0, 0);
   display: flex;
   text-align: left;
  }
 .price{
   display: flex;
   text-align: center;
+  color: rgba(1, 177, 1, 0.74);
+  font-weight: bold;
+ /* text-shadow:
+    1px 1px 0 #000000,
+    1px 1px 0 #000000,
+    1px 1px 0 #000000,
+    1px 1px 0 #000000; */
 }
-
-
+.sold{
+  display: flex;
+  text-align: center;
+  color: rgb(202, 0, 7);
+  font-weight: normal;
+}
  /*Скрыть модальное окно по умолчанию*/
 .modal {
   display: none;
@@ -192,15 +199,4 @@ table {
   display: block;
   width: 100%; /* занимать всю ширину блоков на мобильных */
 }
-/* медиа запрос для планшетов и десктопов */
-@media (min-width: 768px) {
-  .mobile-image {
-    width: 30%;  /* показать каждую картинку на 30% ширины блока на планш и десках */
-    margin: 0 1%; /* добавить небольшие отступы между картинками */
-  }
-}
-@media (max-width:768px) {
-  .flex-container {
-    flex-direction: column;
-  }
-}
+

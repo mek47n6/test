@@ -24,3 +24,13 @@ document.getElementById('expandBtn').addEventListener('click', function() {
 })
 
 
+
+const prices = document.querySelectorAll('.price');
+
+Array.from(priceBlock).forEach(price => {
+    if (price.inerText.includes ('Продано')) {
+        price.classList.remove('price');
+        price.classList.add('sold');
+    }
+});
+
