@@ -110,6 +110,8 @@ table {
 
 /*цена под картину*/
 .product {
+  align-items: center;
+  width: 33%;
   display: flex;
   flex-direction: column;
 }
