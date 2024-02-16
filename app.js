@@ -30,11 +30,9 @@ const prices = document.querySelectorAll('.price');
 Array.from(prices).forEach(price => {
     if (price.innerText.includes ('Продано')) {
         price.classList.add('sold');
-    } else if 
+    } if 
         (price.innerText.includes ('В работе...')) {
         price.classList.add ('inWork');
-    } else {
-        price.classList.add ('price');
     }
 });
 
