@@ -27,10 +27,14 @@ document.getElementById('expandBtn').addEventListener('click', function() {
 
 const prices = document.querySelectorAll('.price');
 
-Array.from(priceBlock).forEach(price => {
-    if (price.inerText.includes ('Продано')) {
-        price.classList.remove('price');
+Array.from(prices).forEach(price => {
+    if (price.innerText.includes ('Продано')) {
         price.classList.add('sold');
+    } else if 
+        (price.innerText.includes ('В работе...')) {
+        price.classList.add ('inWork');
+    } else {
+        price.classList.add ('price');
     }
 });
 

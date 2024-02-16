@@ -130,8 +130,6 @@ table {
   text-align: left;
  }
 .price{
-  display: flex;
-  text-align: center;
   color: rgba(1, 177, 1, 0.74);
   font-weight: bold;
  /* text-shadow:
@@ -141,9 +139,11 @@ table {
     1px 1px 0 #000000; */
 }
 .sold{
-  display: flex;
-  text-align: center;
   color: rgb(202, 0, 7);
+  font-weight: normal;
+}
+.inWork {
+  color: #0006ad;
   font-weight: normal;
 }
  /*Скрыть модальное окно по умолчанию*/
