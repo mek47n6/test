@@ -81,7 +81,6 @@ table {
 }
 
 /* Блок флексом со вложеными элементами, одинаковыми отступами и по центру горизонтальной оси */
-
 .cover {
   width: 100%;
   display: flex;
@@ -91,7 +90,6 @@ table {
 }
 
 /* у каждого элемента внешние отступы*/
-
 .box {
   display: flex;
   flex-direction: column;
@@ -202,3 +200,26 @@ table {
   width: 100%; /* занимать всю ширину блоков на мобильных */
 }
 
+@media(max-width :993px){
+  .product {
+  }
+@media(min-width :992px){
+  .product {
+  width: 50%;
+  }
+}
+@media(min-width :768px){
+  .product {
+    width: 50%;
+    }
+}
+@media(min-width :480px){
+  .product {
+    width: 50%;
+    }
+}
+@media(min-width :320px){
+  .product {
+    width: 50%;
+    }
+}
