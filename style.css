@@ -37,7 +37,7 @@ table {
   border-collapse: collapse;
 }
 
-/* Мои стили */
+/* -------------------------------- Мои стили ----------------------------------- */
 
 .topBar {
   height: 140px;
@@ -55,8 +55,11 @@ table {
   justify-content: center;
   align-items: center;
   width: 20%;
-  font-size: 15px;
   }
+.eMail {
+  width: 50px;
+  height: 50px;
+}
 .biogra {
   display: flex;
   height: 400px;
@@ -81,11 +84,11 @@ table {
   flex-direction: column;
 }
 .aboutMe {
-  height: 160px;
+  height: 190px;
   overflow: auto;
 }
 .scroll { /* полоса прокрутки текста */ 
-  height: 150px;
+  height: 190px;
   overflow: auto;
   /* border: 1px solid black;*/
 }
@@ -205,38 +208,36 @@ table {
 }
 
 
-@media(max-width :992px){
+@media screen and (min-width :500px) and (max-width: 990px) {
   .product {
   width: 50%;
   }
-  .selfInfo {
-  font-size: 20px;
+  .box > img {
+    height: 450px;
   }
-
-}
-@media(max-width: 768px){
-  .product {
-    width: 50%;
-    }
   .selfInfo {
-      font-size: 20px;
-    }
+   font-size: 20px;
+  }
 }
 
-@media(max-width: 480px){
+@media screen and (min-width: 310px) and (max-width: 499px) {
+  .biogra {
+    height: 800px;
+  }
+  .biograFoto {
+    height: 250px;
+  }
   .product {
     width: 50%;
-    }
-  .selfInfo {
-      font-size: 20px;
-    }
-}
+  }
+  .box > img {
+    height: auto;
+  }
+  .selfInfo{
 
-@media(max-width: 320px){
-  .product {
-    width: 50%;
-    }
-  .selfInfo {
-      font-size: 20px;
-    }
+    font-size: 20px;
+  }
+  .aboutMe {
+    height: 260px;
+  }
 }
